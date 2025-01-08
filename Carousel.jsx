@@ -15,4 +15,4 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
           src={images[currentIndex]}
           alt={`carousel-${currentIndex}`}
           style={styles.image}
-        />
+        /> </div>
