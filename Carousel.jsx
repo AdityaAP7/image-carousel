@@ -27,4 +27,7 @@ const styles = {
     justifyContent: "center",width: "600px",
     margin: "auto",
     overflow: "hidden",
-  },
+  }, button: {
+    backgroundColor: "#fff",
+    border: "1px solid #ccc",
+    borderRadius: "50%",
