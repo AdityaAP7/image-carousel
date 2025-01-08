@@ -20,3 +20,6 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
   </div>
 );
 }
+const styles = {
+  carouselContainer: {
+    position: "relative",
