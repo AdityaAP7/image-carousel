@@ -22,4 +22,9 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
 }
 const styles = {
   carouselContainer: {
-    position: "relative",
+    position: "relative",    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",width: "600px",
+    margin: "auto",
+    overflow: "hidden",
+  },
