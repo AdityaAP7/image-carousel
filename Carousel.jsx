@@ -4,4 +4,6 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
     clearInterval(slideInterval);
   };  }, [currentIndex, autoPlay, interval]);const handlePrevious = () => { setCurrentIndex((prevIndex) =>  prevIndex === 0 ? images.length - 1 : prevIndex - 1
   );
-};
+};  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
