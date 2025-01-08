@@ -17,3 +17,6 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
           style={styles.image}
         /> </div>      <button onClick={handleNext} style={styles.button}>   &gt;
       </button>
+  </div>
+);
+}
