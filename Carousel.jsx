@@ -8,4 +8,5 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };if (!images.length) {
     return <p>No images to display.</p>;
-  }
+  }  return (
+    <div style={styles.carouselContainer}></div>
