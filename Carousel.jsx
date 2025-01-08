@@ -9,4 +9,6 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
   };if (!images.length) {
     return <p>No images to display.</p>;
   }  return (
-    <div style={styles.carouselContainer}></div>
+    <div style={styles.carouselContainer}></div> <button onClick={handlePrevious} style={styles.button}>
+    &lt;
+  </button>
