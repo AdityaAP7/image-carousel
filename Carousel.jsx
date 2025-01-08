@@ -37,4 +37,11 @@ const styles = {
   },imageWrapper: {
     width: "100%",
     textAlign: "center",
+  }, image: {
+    width: "100%",
+    maxHeight: "400px",
+    objectFit: "cover",
   },
+};
+
+export default Carousel;
