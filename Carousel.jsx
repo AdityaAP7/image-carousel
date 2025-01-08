@@ -30,4 +30,8 @@ const styles = {
   }, button: {
     backgroundColor: "#fff",
     border: "1px solid #ccc",
-    borderRadius: "50%",
+    borderRadius: "50%",fontSize: "1.2rem",
+    padding: "0.5rem 1rem",
+    cursor: "pointer",
+    zIndex: 2,
+  },
