@@ -6,4 +6,6 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
   );
 };  const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  };if (!images.length) {
+    return <p>No images to display.</p>;
+  }
