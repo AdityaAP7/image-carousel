@@ -11,4 +11,4 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
   }  return (
     <div style={styles.carouselContainer}></div> <button onClick={handlePrevious} style={styles.button}>
     &lt;
-  </button>
+  </button>   <div style={styles.imageWrapper}>
