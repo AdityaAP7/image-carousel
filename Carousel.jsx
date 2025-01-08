@@ -34,4 +34,7 @@ const styles = {
     padding: "0.5rem 1rem",
     cursor: "pointer",
     zIndex: 2,
+  },imageWrapper: {
+    width: "100%",
+    textAlign: "center",
   },
