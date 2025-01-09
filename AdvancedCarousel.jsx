@@ -59,4 +59,6 @@ function AdvancedCarousel({
       className="carousel-container"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-    ></div>
+    ></div><button className="arrow-button" onClick={handlePrevious}>
+    &lt;
+  </button>
