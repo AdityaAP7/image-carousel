@@ -14,4 +14,10 @@ function AdvancedCarousel({
   }) { const [currentIndex, setCurrentIndex] = useState(0);
     const [transitionClass, setTransitionClass] = useState(""); 
     const touchStartX = useRef(null);
-  
+    // Auto-play effect
+    useEffect(() => {
+        if (!autoPlay || images.length <= 1) return;
+        const slideInterval = setInterval(() => {
+            handleNext();
+          }, interval);
+      
