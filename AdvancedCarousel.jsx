@@ -40,4 +40,7 @@ function AdvancedCarousel({
       const jumpToIndex = (index) => {
         setCurrentIndex(index);
       };
-    
+     // Touch swipe handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
