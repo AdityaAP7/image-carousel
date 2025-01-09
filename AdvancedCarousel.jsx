@@ -54,4 +54,9 @@ function AdvancedCarousel({
   };
   if (!images.length) {
     return <p>No images to display.</p>;
-  }
+  }  return (
+    <div
+      className="carousel-container"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    ></div>
