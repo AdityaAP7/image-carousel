@@ -70,4 +70,17 @@ function AdvancedCarousel({
   />
 </div>     <button className="arrow-button" onClick={handleNext}>
         &gt;
-      </button>
+      </button> {/* Dot-based navigation */}
+      {showDots && (
+        <div className="dots-container">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              onClick={() => jumpToIndex(index)}
+              className={`dot ${currentIndex === index ? "active" : ""}`}
+            >
+              ●
+            </span>
+          ))}
+        </div>
+      )}
