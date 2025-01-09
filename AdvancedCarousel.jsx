@@ -11,4 +11,7 @@ function AdvancedCarousel({
     showDots = true,
     showThumbnails = true,
     transitionType = "fade", // 'fade' or 'slide'
-  }) {
+  }) { const [currentIndex, setCurrentIndex] = useState(0);
+    const [transitionClass, setTransitionClass] = useState(""); 
+    const touchStartX = useRef(null);
+  
