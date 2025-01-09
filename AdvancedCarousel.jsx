@@ -36,4 +36,8 @@ function AdvancedCarousel({
         );
       };  const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }; // Dot navigation: jump directly to an index
+      const jumpToIndex = (index) => {
+        setCurrentIndex(index);
       };
+    
