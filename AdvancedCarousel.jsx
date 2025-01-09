@@ -24,4 +24,6 @@ function AdvancedCarousel({
         }, [currentIndex, autoPlay, interval, images.length]);// Apply transition class whenever the currentIndex changes
         useEffect(() => {
           if (transitionType === "fade") {   setTransitionClass("fade");
-            // remove the transition class after animation completes
+            // remove the transition class after animation completes  const timer = setTimeout(() => setTransitionClass(""), 600);
+      return () => clearTimeout(timer);
+    }
