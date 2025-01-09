@@ -43,4 +43,7 @@ function AdvancedCarousel({
      // Touch swipe handlers
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
-  };
+  };  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchEndX - touchStartX.current;
