@@ -26,4 +26,5 @@ function AdvancedCarousel({
           if (transitionType === "fade") {   setTransitionClass("fade");
             // remove the transition class after animation completes  const timer = setTimeout(() => setTransitionClass(""), 600);
       return () => clearTimeout(timer);
-    }
+    }   if (transitionType === "slide") {
+        setTransitionClass("slide");
