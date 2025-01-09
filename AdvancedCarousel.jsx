@@ -86,4 +86,20 @@ function AdvancedCarousel({
       )}   {/* Thumbnails */}
       {showThumbnails && (
         <div className="thumbnails-container">
-          {images.map((img, index) => (
+          {images.map((img, index) => ( <img
+            key={index}
+            src={img}
+            alt={`thumbnail-${index}`}
+            className={`thumbnail ${
+              currentIndex === index ? "selected-thumbnail" : ""
+            }`}
+            onClick={() => jumpToIndex(index)}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+);
+}
+
+export default AdvancedCarousel;
