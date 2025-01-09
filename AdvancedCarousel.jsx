@@ -46,4 +46,5 @@ function AdvancedCarousel({
   };  const handleTouchEnd = (e) => {
     if (touchStartX.current === null) return;
     const touchEndX = e.changedTouches[0].clientX;
-    const distance = touchEndX - touchStartX.current;
+    const distance = touchEndX - touchStartX.current;   // Decide threshold distance for a valid swipe:
+    if (distance > 50) {
