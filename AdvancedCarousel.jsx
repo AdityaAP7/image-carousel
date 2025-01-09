@@ -52,3 +52,6 @@ function AdvancedCarousel({
     }
     touchStartX.current = null;
   };
+  if (!images.length) {
+    return <p>No images to display.</p>;
+  }
