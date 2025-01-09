@@ -68,4 +68,6 @@ function AdvancedCarousel({
     alt={`carousel-${currentIndex}`}
     className={`carousel-image ${transitionClass}`}
   />
-</div>
+</div>     <button className="arrow-button" onClick={handleNext}>
+        &gt;
+      </button>
