@@ -83,4 +83,7 @@ function AdvancedCarousel({
             </span>
           ))}
         </div>
-      )}
+      )}   {/* Thumbnails */}
+      {showThumbnails && (
+        <div className="thumbnails-container">
+          {images.map((img, index) => (
