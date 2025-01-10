@@ -21,7 +21,10 @@ function Carousel({ images = [], autoPlay = true, interval = 3000 }) {const [cur
     &lt;
         /> </div>      <button onClick={handleNext} style={styles.button}>   &gt;
       </button>};  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) %     return <p>No images to display.</p>;
+  }  return (
+    <div style={styles.carouselContainer}></div> <button onClick={handlePrevious} style={styles.button}>
+    &lt;images.length);
   };if (!images.length) {
     return <p>No images to display.</p>;
   }  return (
