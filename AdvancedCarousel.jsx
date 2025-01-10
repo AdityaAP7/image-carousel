@@ -56,7 +56,8 @@ function AdvancedCarousel({
     } else if (distance < -50) {  handleNext();
     }
     touchStartX.current = null;
-  };   const jumpToIndex = (index) => {
+  };   const jumpToIndex = (index) => {   const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchEndX - touchStartX.current;   // Decide threshold distance for a valid swipe:
         setCurrentIndex(index);
       };
   if (!images.length) {
