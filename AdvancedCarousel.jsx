@@ -30,7 +30,10 @@ function AdvancedCarousel({
         setTransitionClass("slide");   const timer = setTimeout(() => setTransitionClass(""), 600);
         return () => clearTimeout(timer);
       }  }, [currentIndex, transitionType]);
-      const handlePrevious = () => {
+      const handlePrevious = () => { const slideInterval = setInterval(() => {
+            handleNext();
+          }, interval);
+          return () => clearInterval(slideInterval);
         setCurrentIndex((prevIndex) =>
           prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
