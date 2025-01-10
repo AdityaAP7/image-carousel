@@ -31,7 +31,9 @@ function AdvancedCarousel({
         return () => clearTimeout(timer);
       }  }, [currentIndex, transitionType]);
       const handlePrevious = () => { const slideInterval = setInterval(() => {
-            handleNext();
+            handleNext();  const jumpToIndex = (index) => {
+        setCurrentIndex(index);
+      };
           }, interval);
           return () => clearInterval(slideInterval);
         setCurrentIndex((prevIndex) =>
