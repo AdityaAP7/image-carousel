@@ -38,7 +38,10 @@ function AdvancedCarousel({
           return () => clearInterval(slideInterval);
         setCurrentIndex((prevIndex) =>
           prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
+        );      const handlePrevious = () => { const slideInterval = setInterval(() => {
+            handleNext();  const jumpToIndex = (index) => {
+        setCurrentIndex(index);
+      };
       };  const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }; // Dot navigation: jump directly to an index
