@@ -87,7 +87,10 @@ function AdvancedCarousel({
               onClick={() => jumpToIndex(index)}
               className={`dot ${currentIndex === index ? "active" : ""}`}
             >
-              ●
+              ●    {showThumbnails && (
+        <div className="thumbnails-container">
+          {images.map((img, index) => ( <img
+            key={index}
             </span>
           ))}
         </div>
