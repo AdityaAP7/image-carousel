@@ -67,7 +67,15 @@ function AdvancedCarousel({
     src={images[currentIndex]}
     alt={`carousel-${currentIndex}`}
     className={`carousel-image ${transitionClass}`}
-  />
+  />  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const distance = touchEndX - touchStartX.current;   // Decide threshold distance for a valid swipe:
+    if (distance > 50) { handlePrevious();
+    } else if (distance < -50) {  handleNext();
+    }
 </div>     <button className="arrow-button" onClick={handleNext}>
         &gt;
       </button> {/* Dot-based navigation */}
