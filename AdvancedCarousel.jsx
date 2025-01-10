@@ -54,7 +54,9 @@ function AdvancedCarousel({
     } else if (distance < -50) {  handleNext();
     }
     touchStartX.current = null;
-  };
+  };   const jumpToIndex = (index) => {
+        setCurrentIndex(index);
+      };
   if (!images.length) {
     return <p>No images to display.</p>;
   }  return (
