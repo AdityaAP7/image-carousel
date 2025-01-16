@@ -28,3 +28,4 @@ useEffect(() => {
   useEffect(() => {
     if (transitionType === "fade") {
       setTransitionClass("fade");
+      const timer = setTimeout(() => setTransitionClass(""), 600);
