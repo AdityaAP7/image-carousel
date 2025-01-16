@@ -32,3 +32,4 @@ useEffect(() => {
      return () => clearTimeout(timer);
     }
     if (transitionType === "slide") {
+      setTransitionClass("slide");
