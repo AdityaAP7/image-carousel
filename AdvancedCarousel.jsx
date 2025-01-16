@@ -9,3 +9,8 @@ function AdvancedCarousel({
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transitionClass, setTransitionClass] = useState("");
+  const touchStartX = useRef<number | null>(null);
+
+  // -----------------------------
+  // 1. Auto-play effect
+  // -----------------------------
