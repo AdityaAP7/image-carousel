@@ -27,3 +27,4 @@ useEffect(() => {
   // -----------------------------
   useEffect(() => {
     if (transitionType === "fade") {
+      setTransitionClass("fade");
