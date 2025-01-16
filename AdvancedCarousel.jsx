@@ -26,3 +26,4 @@ useEffect(() => {
   // 2. Transition effect
   // -----------------------------
   useEffect(() => {
+    if (transitionType === "fade") {
