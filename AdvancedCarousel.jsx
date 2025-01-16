@@ -33,3 +33,4 @@ useEffect(() => {
     }
     if (transitionType === "slide") {
       setTransitionClass("slide");
+      const timer = setTimeout(() => setTransitionClass(""), 600);
