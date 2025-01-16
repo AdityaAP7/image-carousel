@@ -22,3 +22,6 @@ useEffect(() => {
     }, interval);
     return () => clearInterval(slideInterval);
   }, [currentIndex, autoPlay, interval, images.length]);
+ // -----------------------------
+  // 2. Transition effect
+  // -----------------------------
