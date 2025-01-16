@@ -4,3 +4,4 @@ function AdvancedCarousel({
   autoPlay = true,
   interval = 3000,
   showDots = true,
+  showThumbnails = true,
