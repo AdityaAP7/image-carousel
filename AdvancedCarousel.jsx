@@ -6,3 +6,4 @@ function AdvancedCarousel({
   showDots = true,
   showThumbnails = true,
   transitionType = "fade", // 'fade' or 'slide'
+}) {
