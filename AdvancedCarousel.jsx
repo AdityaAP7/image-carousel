@@ -8,3 +8,4 @@ function AdvancedCarousel({
   transitionType = "fade", // 'fade' or 'slide'
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [transitionClass, setTransitionClass] = useState("");
