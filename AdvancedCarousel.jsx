@@ -14,3 +14,9 @@ function AdvancedCarousel({
   // -----------------------------
   // 1. Auto-play effect
   // -----------------------------
+useEffect(() => {
+    if (!autoPlay || images.length <= 1) return;
+
+    const slideInterval = setInterval(() => {
+      handleNext();
+    }, interval);
