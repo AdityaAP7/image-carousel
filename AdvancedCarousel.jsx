@@ -20,3 +20,4 @@ useEffect(() => {
     const slideInterval = setInterval(() => {
       handleNext();
     }, interval);
+    return () => clearInterval(slideInterval);
