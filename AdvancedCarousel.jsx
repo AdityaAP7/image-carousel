@@ -21,3 +21,4 @@ useEffect(() => {
       handleNext();
     }, interval);
     return () => clearInterval(slideInterval);
+  }, [currentIndex, autoPlay, interval, images.length]);
