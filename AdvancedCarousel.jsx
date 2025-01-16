@@ -5,3 +5,4 @@ function AdvancedCarousel({
   interval = 3000,
   showDots = true,
   showThumbnails = true,
+  transitionType = "fade", // 'fade' or 'slide'
