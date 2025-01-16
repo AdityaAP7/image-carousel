@@ -3,3 +3,4 @@ function AdvancedCarousel({
   images = [],
   autoPlay = true,
   interval = 3000,
+  showDots = true,
