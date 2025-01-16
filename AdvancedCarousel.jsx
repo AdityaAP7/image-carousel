@@ -7,3 +7,4 @@ function AdvancedCarousel({
   showThumbnails = true,
   transitionType = "fade", // 'fade' or 'slide'
 }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
