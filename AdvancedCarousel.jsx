@@ -1,4 +1,4 @@
-qimport React, { useState, useEffect, useRef } from "react";
+1qimport React, { useState, useEffect, useRef } from "react";
 function AdvancedCarousel({
   images = [],
   autoPlay = true,
