@@ -1,4 +1,4 @@
-1wq React, { useState, useEffect, useRef } from "react";
+11wq React, { useState, useEffect, useRef } from "react";
 function AdvancedCarousel({
   images = [],
   autoPlay = true,
