@@ -1,4 +1,4 @@
-76543211wq React, { useState, useEffect, useRef } from "react";
+876543211wq React, { useState, useEffect, useRef } from "react";
 function AdvancedCarousel({
   images = [],
   autoPlay = true,
