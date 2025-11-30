@@ -1,4 +1,4 @@
-54321import React from "react";
+654321import React from "react";
 import Carousel from "./Carousel";
 function App() { const sampleImages = [
     "https://via.placeholder.com/600x400/ff7f7f/333333?text=Slide+1",
